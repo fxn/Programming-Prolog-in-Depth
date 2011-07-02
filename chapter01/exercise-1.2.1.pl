@@ -1,9 +1,5 @@
-% ---\
-%
-% Give an example, in Prolog, of a fact, a rule, a clause, a one-place predicate, and a
-% predicate of arity 2.
-%
-% ---/
+/* Give an example, in Prolog, of a fact, a rule, a clause, a one-place predicate, and a
+predicate of arity 2. */
 
 % This is a fact.
 even(0).
