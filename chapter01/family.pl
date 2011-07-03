@@ -11,6 +11,11 @@ father(elmo, jim).
 father(greg, stephanie).
 father(greg, danielle).
 
+% exercise 1.8.2
+father(xavier, andrea).
+father(joaquin, xavier).
+father(miguel, trini).
+
 mother(melody, cathy).
 mother(melody, sharon).
 mother(hazel, michael).
@@ -20,5 +25,15 @@ mother(eleanor, crystal).
 mother(crystal, stephanie).
 mother(crystal, danielle).
 
+% exercise 1.8.2
+mother(trini, andrea).
+mother(pilar, xavier).
+mother(montse, trini).
+
 parent(X, Y) :- father(X, Y).
 parent(X, Y) :- mother(X, Y).
+
+% exercise 1.9.1
+grandfather(X, Z) :- father(X, Y), parent(Y, Z).
+grandmother(X, Z) :- mother(X, Y), parent(Y, Z).
+grandparent(X, Z) :- parent(X, Y), parent(Y, Z).
