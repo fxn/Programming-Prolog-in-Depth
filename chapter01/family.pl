@@ -37,3 +37,9 @@ parent(X, Y) :- mother(X, Y).
 grandfather(X, Z) :- father(X, Y), parent(Y, Z).
 grandmother(X, Z) :- mother(X, Y), parent(Y, Z).
 grandparent(X, Z) :- parent(X, Y), parent(Y, Z).
+
+% exercise 1.11.2, this guy should not be a young parent.
+father(non_young_parent, child1).
+father(non_young_parent, child2).
+father(child1, grandchild1).
+
